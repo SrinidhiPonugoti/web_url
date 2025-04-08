@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Team - SmartSync</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .page-header {
+      padding: 60px 0;
+      background: linear-gradient(to right, #007bff, #00c6ff);
+      color: white;
+      text-align: center;
+    }
+
+    .team-container {
+      padding: 3rem 1rem;
+    }
+
+    .team-card {
+      background-color: white;
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .team-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: auto;
+    }
+
+    .card-title {
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+
+    .card-subtitle {
+      color: #6c757d;
+      font-size: 0.9rem;
+    }
+
+    .social-icons a {
+      color: #007bff;
+      margin: 0 8px;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #0056b3;
+    }
+
+    .fade-in {
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 576px) {
+      .team-img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">SmartSync</a>
+    </div>
+  </nav>
+
+  <!-- Fancy Header with Emoji + Fade-In -->
+  <div class="page-header fade-in">
+    <h1 class="display-5 fw-bold">👥 Meet Our Dream Team</h1>
+    <p class="lead">💡 Innovators. 🔧 Builders. 💻 Coders.</p>
+  </div>
+
+  <!-- Team Section -->
+  <div class="container team-container fade-in">
+    <div class="row justify-content-center g-4">
+
+      <!-- Team Member -->
+      <div class="col-md-4">
+        <div class="card team-card text-center p-4">
+          <img src="team_leader.jpg" class="team-img" alt="Team Leader">
+          <div class="card-body">
+            <h5 class="card-title">Lakshmi Srinidhi</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Team Leader</h6>
+            <p class="card-text">Full-stack leader with a spark for AI innovation and strong technical vision.</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/ponugoti-lakshmi-srinidhi-905a1332b/"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/SrinidhiPonugoti"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member -->
+      <div class="col-md-4">
+        <div class="card team-card text-center p-4">
+          <img src="team_member.jpg" class="team-img" alt="Team Member">
+          <div class="card-body">
+            <h5 class="card-title">Sai Surya</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Backend Developer</h6>
+            <p class="card-text">Focuses on backend logic and system performance optimization for SmartSync.</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/sai-surya-konakalla/"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/saisurya592003"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-white bg-dark py-3">
+    &copy; 2025 SmartSync. All rights reserved.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
